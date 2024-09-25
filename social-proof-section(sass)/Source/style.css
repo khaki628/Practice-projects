@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+:root {
+  --color--1: hsl(300, 43%, 22%);
+  --color--2: hsl(333, 80%, 67%);
+  --color--3: hsl(303, 10%, 53%);
+  --color--4: hsl(300, 24%, 96%);
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  margin: 0%;
+  padding: 0%;
+  background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-size: 50%, 75%;
+  width: 100%;
+  height: 100vh;
+}
+body main {
+  width: 70%;
+  margin: 2em auto;
+  display: grid;
+  grid-template-areas: " header  right " " footer  footer";
+  max-width: 1090px;
+}
+body main .left--main {
+  grid-area: header;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 459px;
+}
+body main .left--main h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: left;
+  color: var(--color--1);
+}
+body main .left--main p {
+  color: var(--color--3);
+  margin: 1em 0;
+  line-height: 2;
+}
+body main .right--main {
+  grid-area: right;
+  width: 520px;
+  margin: 3em 0;
+}
+body main .right--main .rated {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  padding: 0.5em 0;
+  background-color: var(--color--4);
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+body main .right--main .rated .stars {
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+body main .right--main .rated .title {
+  color: var(--color--1);
+  font-weight: 700;
+}
+body main .right--main .row-first {
+  margin-left: -2.5rem;
+}
+body main .right--main .row-third {
+  margin-left: 2.5rem;
+}
+body main .bottom--main {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .bottom--main .container {
+  width: 300px;
+  height: 200px;
+  background-color: var(--color--1);
+  color: var(--color--4);
+  padding: 1.7em;
+  margin: 0.5em 0;
+  border-radius: 10px;
+  margin-right: 1.2rem;
+}
+body main .bottom--main .container .user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+  color: var(--color--4);
+}
+body main .bottom--main .container .user .porf--img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+body main .bottom--main .container .user .name {
+  font-weight: 500;
+}
+body main .bottom--main .container .user .state {
+  font-weight: 400;
+  color: var(--color--2);
+}
+body main .bottom--main .container .text {
+  line-height: 1.5;
+}
+body main .bottom--main .reviow-second {
+  margin-top: 4rem;
+}
+body main .bottom--main .reviow-third {
+  margin-top: 8rem;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    font-family: "Spartan", sans-serif;
+    font-size: 1rem;
+    margin: 0%;
+    padding: 0%;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+    background-size: 100%, 100%;
+    width: 100vw;
+    height: 100vh;
+  }
+  body main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 3em auto;
+    width: 80%;
+  }
+  body main .left--main {
+    grid-area: header;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 459px;
+  }
+  body main .left--main h1 {
+    width: 400px;
+    font-size: 2.7rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color--1);
+  }
+  body main .left--main p {
+    width: 475px;
+    color: var(--color--3);
+    margin: 1em 0;
+    line-height: 2;
+    font-size: 1.3rem;
+  }
+  body main .right--main {
+    grid-area: right;
+    width: 500px;
+    margin: 2em 0;
+  }
+  body main .right--main .rated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: var(--color--4);
+  }
+  body main .right--main .rated .stars {
+    margin-top: 1rem;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  body main .right--main .rated .stars img {
+    width: 1.5rem;
+  }
+  body main .right--main .rated .title {
+    margin: 1rem;
+    color: var(--color--1);
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  body main .right--main .row-first {
+    margin-left: 0;
+  }
+  body main .right--main .row-third {
+    margin-left: 0;
+  }
+  body main .bottom--main {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+  }
+  body main .bottom--main .container {
+    width: 400px;
+    height: 250px;
+    background-color: var(--color--1);
+    color: var(--color--4);
+    padding: 2em;
+    border-radius: 10px;
+    padding-bottom: 4rem;
+  }
+  body main .bottom--main .container .user {
+    display: grid;
+    flex-direction: row;
+    grid-template-areas: " left  right " " left  bottom";
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    margin-bottom: 2em;
+    color: var(--color--4);
+  }
+  body main .bottom--main .container .user .porf--img {
+    grid-area: left;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+  body main .bottom--main .container .user .name {
+    padding-top: 1em;
+    grid-area: right;
+    font-weight: 500;
+    margin: 0%;
+    font-size: 1.3rem;
+  }
+  body main .bottom--main .container .user .state {
+    margin-top: 0%;
+    grid-area: bottom;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--color--2);
+  }
+  body main .bottom--main .container .text {
+    margin-top: 3em;
+    font-size: 1.35rem;
+    line-height: 1.5;
+  }
+  body main .bottom--main .reviow-second {
+    margin-top: 0;
+  }
+  body main .bottom--main .reviow-third {
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

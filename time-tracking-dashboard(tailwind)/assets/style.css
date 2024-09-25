@@ -1,0 +1,152 @@
+@import url(./font.css);
+:root {
+  --color-1: hsl(246, 80%, 60%);
+  --color-2: hsl(226, 43%, 10%);
+  --color-3: hsl(235, 46%, 20%);
+  --color-4: hsl(235, 45%, 61%);
+  --color-5: hsl(236, 100%, 87%);
+  --color-6: hsl(0, 0%, 100%);
+  --color-card-header-work: hsl(15, 100%, 70%);
+  --color-card-header-play: hsl(195, 74%, 62%);
+  --color-header-study: hsl(348, 100%, 68%);
+  --color-header-excersie: hsl(145, 58%, 55%);
+  --color-card-header-social: hsl(264, 64%, 52%);
+  --color-card-header-self-care: hsl(43, 84%, 65%);
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--color-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
+  height: 100vh;
+  color: var(--color-6);
+}
+body .content {
+  max-width: 1110px;
+  width: calc(100% - 4rem);
+  max-height: 520px;
+  height: 100%;
+  gap: 1.875rem;
+  display: flex;
+}
+body .content .profile {
+  width: 255px;
+  height: 520px;
+  background-color: var(--color-3);
+  border-radius: 1rem;
+}
+body .content .profile .top-profile {
+  height: 356px;
+  width: 100%;
+  background-color: var(--color-1);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+body .content .profile .top-profile img {
+  width: 70px;
+  border: 3px solid var(--color-6);
+  border-radius: 50%;
+  margin: 30px 0 0 30px;
+}
+body .content .profile .top-profile p {
+  font-size: 0.9375rem;
+  margin: 35px 0 0 30px;
+}
+body .content .profile .top-profile h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 10px 0 0 30px;
+}
+body .content .profile .botton-profile {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 207px;
+}
+body .content .profile .botton-profile a {
+  text-decoration: none;
+  color: var(--color-4);
+}
+body .content .info {
+  width: 855px;
+  height: 520px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+body .content .info .card {
+  width: 255px;
+  height: 245px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: transform 0.3s;
+}
+body .content .info .card .card-bottom {
+  background-color: var(--color-3);
+  border-radius: 1rem;
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+  height: 160px;
+}
+body .content .info .card .card-bottom .card-header {
+  display: flex;
+  justify-content: space-between;
+}
+body .content .info .card .card-bottom .card-header p {
+  font-size: 1.125rem;
+  color: var(--color-6);
+}
+body .content .info .card .card-bottom .card-header img {
+  width: 35px;
+}
+body .content .info .card .card-bottom h3 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin: 0%;
+}
+body .content .info .card .card-bottom p {
+  color: var(--color-4);
+}
+body .content .work {
+  background-color: var(--color-card-header-work);
+  background-image: url(../images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: right 0 top -10px;
+}
+body .content .play {
+  background-color: var(--color-card-header-play);
+  background-image: url(../images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: right 0 top -10px;
+}
+body .content .study {
+  background-color: var(--color-header-study);
+  background-image: url(../images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: right 0 top -10px;
+}
+body .content .Exercise {
+  background-color: var(--color-header-excersie);
+  background-image: url(../images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: right 0 top -1px;
+}
+body .content .Social {
+  background-color: var(--color-card-header-social);
+  background-image: url(../images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: right 0 top -10px;
+}
+body .content .SelfCare {
+  background-color: var(--color-card-header-self-care);
+  background-image: url(../images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: right 5px top -10px;
+}/*# sourceMappingURL=style.css.map */
